@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-container">
+      <img src="/images/backgroud.gif" alt="Background GIF">
+  </div>
+    <div class="logo">
+      <img src="/images/my-logo.gif" alt="Your Logo" />
+    </div>
+
+    <div class="container">
+      <div class="todo-header">
+        <h2>Todo List</h2>
+        <img src="/images/loader2.gif" height="30px" />
+      </div>
+
+      <div class="todo-body">
+        <input
+          type="text"
+          id="todoText"
+          class="todo-input"
+          placeholder="Add your task"
+        />
+
+        <img
+          src="images/plus.png"
+          alt="+"
+          id="AddUpdateClick"
+          onclick="CreateToDoData()"
+        />
+      </div>
+      <h5 id="AlertMessage"></h5>
+      <div class="todo-list">
+        <ul id="list-items" class="list-items"></ul>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
